@@ -3,4 +3,4 @@ const urlParams = new URLSearchParams(myKeysValues);
 
 const param = urlParams.get('name');
 
-console.log("Name: " + param);
+document.getElementById('result').textContent = "Name: " + param;
