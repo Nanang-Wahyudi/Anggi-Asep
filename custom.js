@@ -1,8 +1,10 @@
-// Mendapatkan nilai parameter GET
-const urlParams = new URLSearchParams(window.location.search);
-const nameParam = urlParams.get('name');
+document.addEventListener('DOMContentLoaded', function() {
+        // Mendapatkan nilai parameter GET
+        const urlParams = new URLSearchParams(window.location.search);
+        const nameParam = urlParams.get('name');
 
-// Menampilkan nilai parameter di dalam elemen HTML
-document.getElementById('result').innerHTML = `
-  <h1>${nameParam}</h1>
-`;
+        // Menampilkan nilai parameter di dalam elemen HTML
+        document.getElementById('result').innerHTML = `
+          <p>Name: ${nameParam}</p>
+        `;
+      });
