@@ -19,6 +19,10 @@ body {
   background: #fff;
 }
 
+.col-md-8 .couple-main {
+  margin-top: -50px;
+}
+
 #page {
   position: relative;
   overflow-x: hidden;
@@ -96,6 +100,10 @@ h1, h2, h3, h4, h5, h6, figure {
 @media screen and (max-width: 768px) {
   .fh5co-nav {
     padding: 20px 0;
+  }
+
+  .col-md-8 .couple-main {
+    margin-top: -50px;
   }
 }
 .fh5co-nav #fh5co-logo {
