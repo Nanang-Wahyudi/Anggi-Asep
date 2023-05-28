@@ -1,6 +1,8 @@
-const myKeysValues = window.location.search;
-const urlParams = new URLSearchParams(myKeysValues);
+// Mendapatkan nilai parameter GET
+const urlParams = new URLSearchParams(window.location.search);
+const nameParam = urlParams.get('name');
 
-const param = urlParams.get('name');
-
-document.getElementById('result').innerHTML = param;
+// Menampilkan nilai parameter di dalam elemen HTML
+document.getElementById('result').innerHTML = `
+  <h1>${nameParam}</h1>
+`;
