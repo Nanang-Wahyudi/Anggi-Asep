@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Menampilkan nilai parameter di dalam elemen HTML
         document.getElementById('result').innerHTML = `
-          <h2 style="color: white;
+          <h3 style="color: white;
                     font-weight: bold;
                   ">
             <u>${nameParam} And Partner</u>
-          </h2>
+          </h3>
         `;
       });
