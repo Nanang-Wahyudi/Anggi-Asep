@@ -5,6 +5,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
         // Menampilkan nilai parameter di dalam elemen HTML
         document.getElementById('result').innerHTML = `
-          <h1 style="color: white;"><u>${nameParam} And Partner</u></h1>
+          <h3 style="color: white;"><u>${nameParam} And Partner</u></h3>
         `;
       });
