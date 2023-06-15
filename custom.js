@@ -13,3 +13,15 @@ document.addEventListener('DOMContentLoaded', function() {
           </p>
         `;
       });
+
+const salin = (btn) => {
+    navigator.clipboard.writeText(btn.getAttribute('data-nomer').toString());
+    let tmp = btn.innerHTML;
+    btn.innerHTML = 'Tersalin';
+    btn.disabled = true;
+
+    setTimeout(() => {
+        btn.innerHTML = tmp;
+        btn.disabled = false;
+    }, 1500);
+};      
